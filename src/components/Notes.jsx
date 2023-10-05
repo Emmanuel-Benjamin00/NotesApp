@@ -3,6 +3,8 @@ import { NotesDataTaken } from '../context/NotesDataContext';
 import { useNavigate } from 'react-router-dom';
 import TimeElapsedCounter from './Timeupd';
 import notessymbol from "../assets/description.svg"
+import edit from "../assets/edit.svg"
+import deleteimg from "../assets/delete.svg"
 
 function Notes() {
     let { data, setData } = useContext(NotesDataTaken);
@@ -33,8 +35,8 @@ function Notes() {
                                                 <div className="text-xs font-weight-bold  mb-1 d-flex justify-content-between mb-4 mt-3">
                                                     <h6 className='card-head'>{e.title}</h6>
                                                     <div>
-                                                        <img className="mx-1 pointer " src="./src/assets/edit.svg" onClick={() => { navigate(`/edit/${i}`) }} />
-                                                        <img className="mx-1 pointer" src="./src/assets/delete.svg" onClick={() => handleDelete(i)} />
+                                                        <img className="mx-1 pointer " src={edit} onClick={() => { navigate(`/edit/${i}`) }} />
+                                                        <img className="mx-1 pointer" src={deleteimg} onClick={() => handleDelete(i)} />
                                                     </div>
                                                 </div>
                                                 <div className="h5 mb-0 font-weight-bold text-gray-800 note-card-content">{e.note}</div>
