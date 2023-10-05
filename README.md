@@ -1,8 +1,10 @@
-# React + Vite
+# Notes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A notepad website for adding notes.
 
-Currently, two official plugins are available:
+Currently it has two fields, one field is title and another is the field for enterting the note.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- It has a sidebar with Notes as active active.
+- Below it has the note with the title and the time updated in a card.
+- It has a button with Edit icon, that edits the note.
+- It has a delete symbol icon, that deletes the note.
